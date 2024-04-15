@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'todo_created_today'%}"><p>Todo created today</p></a>
+    <a href="{% url 'todo_was_created_not_today'%}"><p>Todo was created not today</p></a>
+    {% block content %}{% endblock %}
+</body>
+</html>
