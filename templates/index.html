@@ -1,8 +1,0 @@
-{% extends 'layout.html' %}
-{% block content%}
-<h1>Home Page</h1>
-<h5>All todos :</h5>
-{% for todo in todos %}
-    <a href="{% url 'detail' todo.id %}"><p>{{todo.title}}</p></a>
-{% endfor%}
-{% endblock %}

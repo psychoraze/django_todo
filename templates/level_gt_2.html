@@ -1,7 +1,0 @@
-{% extends 'layout.html' %}
-{% block content%}
-<h1>level_gt_2</h1>
-{% for todo in todos %}
-    <a href="{% url 'detail' todo.id %}"><p>{{todo.title}}</p></a>
-{% endfor%}
-{% endblock %}
